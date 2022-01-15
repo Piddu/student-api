@@ -16,3 +16,4 @@ http://localhost:8000/docs
 N.B.
 per problemi con swagger non è possibile testare la rotta per la creazione di uno studente in questo modo...
 
+Il file "students.postman_collection.json" contiene le richieste già configurare per testare l'api con Postman.
