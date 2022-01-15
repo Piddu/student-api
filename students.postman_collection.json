@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "5b33cce8-a609-47d2-800a-5f01917aaf54",
+		"name": "students",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get single user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/student/a4321e1d-6122-4a52-af62-7860b43f0b15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"student",
+						"a4321e1d-6122-4a52-af62-7860b43f0b15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get single user age",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/student/a4321e1d-6122-4a52-af62-7860b43f0b15/age",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"student",
+						"a4321e1d-6122-4a52-af62-7860b43f0b15",
+						"age"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get single user avg_grade",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/student/a4321e1d-6122-4a52-af62-7860b43f0b15/avg-grade",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"student",
+						"a4321e1d-6122-4a52-af62-7860b43f0b15",
+						"avg-grade"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"firstname\": \"Daniele\",\r\n        \"lastname\": \"Petre\",\r\n        \"birthdate\": \"1984-12-18T00:00:00.000\",\r\n        \"grades\": [\r\n            {\r\n                \"subject\": \"Math\",\r\n                \"grade\": 27.0\r\n            },\r\n            {\r\n                \"subject\": \"Chemistry\",\r\n                \"grade\": 29.0\r\n            }\r\n        ]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"students"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
